@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Formulario de Pedido de Altavoces</h1>
+    <form>
+
+      <!-- Modelo -->
+      <label for="modelo">Modelo *</label>
+      <select id="modelo" name="modelo" required>
+        <option value="">Selecciona una opción</option>
+        <option value="R4">R4</option>
+        <option value="R5">R5</option>
+        <option value="SR1">SR1</option>
+      </select>
+
+      <!-- Potencia máxima -->
+      <label for="potencia">Potencia máxima (50100 W) *</label>
+      <input id="potencia" name="potencia" type="number" min="50" max="100" placeholder="Ej: 75" required />
+
+      <!-- Bluetooth -->
+      <label for="bluetooth">¿Bluetooth? *</label>
+      <select id="bluetooth" name="bluetooth" required>
+        <option value="">Selecciona una opción</option>
+        <option value="Sí">Sí</option>
+        <option value="No">No</option>
+      </select>
+
+      <!-- Color -->
+      <label for="color">Color *</label>
+      <input id="color" name="color" type="text" placeholder="Ej: Negro, Blanco, Rojo" required />
+
+      <!-- Enviar -->
+      <button type="submit">Enviar Pedido</button>
+
+    </form>
+  </div>
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Discos de Jazz</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        nav a { margin-right: 15px; text-decoration: none; }
+        .breadcrumbs { font-size: 0.9em; margin: 10px 0; color: #555; }
+        .disco { border-bottom: 1px solid #ccc; padding: 10px 0; }
+        input { padding: 5px; width: 300px; }
+    </style>
+</head>
+<body>
+
+    <!-- Navegador -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="disco.html">Ficha del disco</a>
+    </nav>
+
+    <!-- Migas de pan -->
+    <div class="breadcrumbs">
+        Inicio > Listado de discos
+    </div>
+
+    <h1>Listado de Discos de Jazz</h1>
+
+    <!-- Buscador -->
+    <input type="text" id="buscador" placeholder="Buscar disco..." onkeyup="buscarDisco()">
+
+    <div id="listaDiscos">
+        <div class="disco">Kind of Blue  Miles Davis</div>
+        <div class="disco">Blue Train  John Coltrane</div>
+        <div class="disco">Time Out  Dave Brubeck</div>
+        <div class="disco">A Love Supreme  John Coltrane</div>
+    </div>
+
+    <script>
+        function buscarDisco() {
+            let texto = document.getElementById("buscador").value.toLowerCase();
+            let discos = document.getElementsByClassName("disco");
+
+            for (let i = 0; i < discos.length; i++) {
+                let contenido = discos[i].textContent.toLowerCase();
+                discos[i].style.display = contenido.includes(texto) ? "" : "none";
+            }
+        }
+    </script>
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ficha del Disco</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        nav a { margin-right: 15px; text-decoration: none; }
+        .breadcrumbs { font-size: 0.9em; margin: 10px 0; color: #555; }
+        .ficha { border: 1px solid #ccc; padding: 15px; width: 400px; }
+    </style>
+</head>
+<body>
+
+    <!-- Navegador -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="disco.html">Ficha del disco</a>
+    </nav>
+
+    <!-- Migas de pan -->
+    <div class="breadcrumbs">
+        Inicio > Listado de discos > Ficha del disco
+    </div>
+
+    <h1>Ficha del Disco</h1>
+
+    <div class="ficha">
+        <p><strong>Título:</strong> Kind of Blue</p>
+        <p><strong>Artista:</strong> Miles Davis</p>
+        <p><strong>Año:</strong> 1959</p>
+        <p><strong>Género:</strong> Jazz</p>
+        <p><strong>Descripción:</strong> Uno de los discos más influyentes de la historia del jazz.</p>
+    </div>
+
+</body>
+</html>
