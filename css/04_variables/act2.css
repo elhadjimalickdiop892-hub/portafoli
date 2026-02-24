@@ -1,0 +1,9 @@
+
+.rectangulo {
+    --altura: 150px;   /* Variable local */
+
+    height: var(--altura);
+    width: calc(var(--altura) * 2);
+
+    background-color: steelblue;
+}
