@@ -1,0 +1,65 @@
+
+/* Estilo general */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.documento {
+  background-color: #fff;
+  max-width: 650px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  border: 2px solid #000;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  color: #b30000;
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #333;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+/* Ocultar información sensible */
+.oculto {
+  background-color: black;
+  color: black;
+  padding: 0 5px;
+  border-radius: 2px;
+}
+
+/* Opcional: efecto al pasar el cursor */
+.oculto:hover {
+  color: white;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+/* Sello de seguridad */
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.sello {
+  color: white;
+  background-color: red;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,37 @@
+
+body {
+    font-family: Georgia, serif;
+    padding: 40px;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+p {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.amarillo {
+    color: #f4b400;
+    font-weight: bold;
+}
+
+.azul {
+    background-color: #4a90e2;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.morado {
+    color: #8e44ad;
+}
+
+.verde {
+    background-color: #27ae60;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
