@@ -1,0 +1,21 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Contenedor de la imagen */
+.imagen-contenedor img {
+    width: 300px; /* ajusta el tamaño según necesites */
+    height: auto;
+    transition: filter 0.5s ease; /* transición suave */
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Filtro al pasar el cursor */
+.imagen-contenedor img:hover {
+    filter: grayscale(100%);
+}

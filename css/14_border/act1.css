@@ -1,0 +1,60 @@
+body {
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Cara del monstruo */
+.monstruo {
+  width: 200px;
+  height: 200px;
+  background: #7ed957;
+  border: 8px solid #333; /* 🔑 uso de border */
+  border-radius: 20px;
+  position: relative;
+}
+
+/* Ojos */
+.ojo {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border: 5px solid #333; /* 🔑 border para contorno */
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+}
+
+.ojo::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.izq {
+  left: 30px;
+}
+
+.der {
+  right: 30px;
+}
+
+/* Boca */
+.boca {
+  width: 100px;
+  height: 50px;
+  border: 5px solid #333; /* 🔑 border clave */
+  border-top: none;       /* crea forma de sonrisa */
+  border-radius: 0 0 50px 50px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}

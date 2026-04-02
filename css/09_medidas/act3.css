@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Párrafo con restricciones */
+.parrafo {
+    background-color: lightcoral;
+    padding: 15px;
+    width: 300px;
+
+    max-height: 10rem;  /* no puede crecer más de esto */
+    min-height: 5rem;   /* altura mínima */
+
+    overflow: auto;     /* añade scroll si se pasa */
+    resize: vertical;   /* permite cambiar altura manualmente */
+}

@@ -1,0 +1,45 @@
+/* 📁 Cargar fuentes locales */
+@font-face {
+    font-family: "TituloElegante";
+    src: url("fonts/titulo.ttf");
+}
+
+@font-face {
+    font-family: "TextoLectura";
+    src: url("fonts/texto.ttf");
+}
+
+/* Estilo general */
+body {
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+
+/* Contenedor */
+.contenedor {
+    width: 65%;
+    margin: 60px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* 🅰️ Título */
+.titulo {
+    font-family: "TituloElegante";
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+
+/* 🅱️ Texto */
+.texto {
+    font-family: "TextoLectura";
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+}

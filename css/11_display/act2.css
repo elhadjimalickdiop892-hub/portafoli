@@ -1,0 +1,14 @@
+strong {
+  position: relative;
+  font-weight: normal;
+}
+
+strong::after {
+  content: "";
+  position: absolute;
+  left: -10px;   /* alarga al inicio */
+  right: -10px;  /* alarga al final */
+  bottom: -3px;
+  height: 3px;
+  background-color: black;
+}

@@ -1,0 +1,47 @@
+/* Estilo general */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #87ceeb; /* cielo azul */
+}
+
+/* Noria */
+.noria {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 8px solid #444;
+    border-radius: 50%;
+    animation: girar 20s linear infinite; /* rotación lenta */
+}
+
+/* Asientos */
+.asiento {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #ff6347; /* color de los asientos */
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform-origin: -120px 0; /* distancia desde el centro de la noria */
+}
+
+/* Posiciones de los 8 asientos */
+.asiento1 { transform: rotate(0deg) translateX(120px) translateY(-50%); }
+.asiento2 { transform: rotate(45deg) translateX(120px) translateY(-50%); }
+.asiento3 { transform: rotate(90deg) translateX(120px) translateY(-50%); }
+.asiento4 { transform: rotate(135deg) translateX(120px) translateY(-50%); }
+.asiento5 { transform: rotate(180deg) translateX(120px) translateY(-50%); }
+.asiento6 { transform: rotate(225deg) translateX(120px) translateY(-50%); }
+.asiento7 { transform: rotate(270deg) translateX(120px) translateY(-50%); }
+.asiento8 { transform: rotate(315deg) translateX(120px) translateY(-50%); }
+
+/* Animación de rotación de la noria */
+@keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}

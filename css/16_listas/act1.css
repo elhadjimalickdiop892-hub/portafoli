@@ -1,0 +1,7 @@
+/* Aplica marcadores cuadrados a la lista */
+ul {
+    list-style-type: square; /* Marcadores cuadrados */
+    padding-left: 20px;      /* Separación entre marcador y texto */
+    font-family: Arial, sans-serif; /* Fuente de la lista */
+    font-size: 16px;          /* Tamaño del texto */
+}
