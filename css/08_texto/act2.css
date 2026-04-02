@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+}
+
+/* Título con letras separadas */
+.titulo {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 5px; /* separa las letras */
+}
+
+/* Autor con separación entre nombre y apellido */
+.autor {
+    font-size: 24px;
+    font-style: italic;
+    text-align: center;
+    word-spacing: 10px; /* separa palabras */
+}
+
+/* Prólogo en mayúsculas */
+.prologo {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase; /* convierte a mayúsculas */
+    margin-top: 20px;
+}
+
+/* Texto justificado */
+.texto {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.6;
+    text-align: justify; /* justifica el texto */
+}

@@ -1,0 +1,51 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de la tabla con scroll horizontal */
+.tabla-contenedor {
+    overflow-x: auto; /* permite scroll horizontal si la tabla es más ancha */
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+}
+
+/* Estilos de la tabla */
+table {
+    border-collapse: collapse;
+    width: 100%; /* ocupa todo el ancho del contenedor */
+    min-width: 600px; /* ancho mínimo para activar scroll si es menor */
+}
+
+/* Encabezados */
+th {
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Celdas */
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+/* Caption */
+caption {
+    caption-side: top;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

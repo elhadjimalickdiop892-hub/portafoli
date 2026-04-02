@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Clase para efecto subrayado con fondo */
+.resaltado {
+    background-color: rgba(255, 255, 0, 0.5); /* amarillo semitransparente */
+    padding: 2px 4px;
+    border-radius: 3px;
+}

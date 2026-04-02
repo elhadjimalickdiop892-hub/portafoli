@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat ejemplo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="chat">
+
+    <!-- Mensaje 1 -->
+    <div class="message">
+        <img src="https://i.pravatar.cc/50?img=1" class="avatar">
+        <div class="content">
+            <div class="name">Ana</div>
+            <div class="date">31/03/2026 - 10:00</div>
+            <div class="text">¡Hola! ¿Cómo estás?</div>
+        </div>
+    </div>
+
+    <!-- Mensaje 2 -->
+    <div class="message right">
+        <img src="https://i.pravatar.cc/50?img=2" class="avatar">
+        <div class="content">
+            <div class="name">Carlos</div>
+            <div class="date">31/03/2026 - 10:02</div>
+            <div class="text">¡Muy bien! ¿Y tú?</div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Template reutilizable -->
+<template id="messageTemplate">
+    <div class="message">
+        <img class="avatar">
+        <div class="content">
+            <div class="name"></div>
+            <div class="date"></div>
+            <div class="text"></div>
+        </div>
+    </div>
+</template>
+
+</body>
+</html>

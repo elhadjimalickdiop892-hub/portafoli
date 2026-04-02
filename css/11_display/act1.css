@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Contenedor en horizontal */
+.container {
+    display: flex; /* 🔥 clave */
+    gap: 15px; /* espacio entre párrafos */
+}
+
+/* Estilo de los párrafos */
+.container p {
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+}

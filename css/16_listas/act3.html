@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú de Navegación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo de la barra de navegación */
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        /* Lista de elementos del menú */
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* coloca los elementos en fila */
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 12px;
+            display: block;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 4px;
+        }
+
+        /* Cambio de estado al pasar el cursor (hover) */
+        nav ul li a:hover {
+            background-color: #ff4500; /* fondo naranja */
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">productos</a></li>
+            <li><a href="#">carrito</a></li>
+            <li><a href="#">perfil</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

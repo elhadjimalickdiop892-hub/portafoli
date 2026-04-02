@@ -1,0 +1,29 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* color de fondo suave */
+    padding: 30px;
+}
+
+/* Título de la página */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Lista con marcadores cuadrados */
+ul {
+    list-style-type: square; /* marcadores cuadrados */
+    padding-left: 30px;      /* separación entre marcador y texto */
+}
+
+/* Estilo de los marcadores */
+ul li::marker {
+    color: #ff4500; /* naranja brillante */
+    font-size: 1.2em;
+}
+
+/* Espaciado entre los ítems de la lista */
+ul li {
+    margin-bottom: 10px;
+}

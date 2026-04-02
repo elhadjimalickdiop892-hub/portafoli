@@ -1,0 +1,47 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Contenedor para los círculos */
+.contenedor {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 100px;
+}
+
+/* Estilo común para los círculos */
+.circulo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    transition: transform 0.5s ease;
+}
+
+/* Círculo rojo */
+.rojo {
+    background-color: red;
+    left: 0;
+    z-index: 1;
+}
+
+/* Círculo azul semitransparente */
+.azul {
+    background-color: blue;
+    opacity: 0.5;
+    left: 100px; /* separación inicial */
+    z-index: 2;
+}
+
+/* Movimiento al pasar el cursor sobre el azul */
+.azul:hover {
+    transform: translateX(-60px); /* se mueve hacia la izquierda sobre el rojo */
+}

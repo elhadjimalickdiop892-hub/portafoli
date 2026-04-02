@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Tarjeta del producto */
+.card {
+    width: 320px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Título */
+.titulo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Subtítulo */
+.subtitulo {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Imagen */
+.imagen {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Modelo y SKU */
+.modelo,
+.sku {
+    font-size: 14px;
+    color: #444;
+    margin: 5px 0;
+}
+
+/* Precio destacado */
+.precio {
+    font-size: 26px;
+    font-weight: bold;
+    color: green;
+    margin-top: 15px;
+}

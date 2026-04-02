@@ -1,0 +1,54 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    text-align: center;
+    height: 100vh;
+}
+
+/* Banner de cookies */
+.cookie-banner {
+    position: fixed;
+    bottom: -100px; /* comienza fuera de la pantalla */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    opacity: 0; /* inicia invisible */
+    animation: mostrarBanner 1s ease forwards;
+    animation-delay: 3s; /* espera 3 segundos antes de aparecer */
+}
+
+/* Botón del banner */
+.cookie-banner button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cookie-banner button:hover {
+    background-color: #45a049;
+}
+
+/* Animación para mostrar el banner */
+@keyframes mostrarBanner {
+    0% {
+        bottom: -100px;
+        opacity: 0;
+    }
+    100% {
+        bottom: 30px;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,39 @@
+/* Estilo general */
+body {
+    background: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    font-family: sans-serif;
+}
+
+/* Contenedor de la escena */
+.scene {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background: url("pared-ladrillo.jpg") center/cover no-repeat;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Imagen principal de la oveja */
+.oveja {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    width: 180px;
+    z-index: 2;
+}
+
+/* Sombra proyectada */
+.sombra {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    width: 180px;
+    filter: brightness(0) opacity(0.4) blur(2px);
+    transform: scale(1.1) translate(40px, -20px);
+    z-index: 1;
+}

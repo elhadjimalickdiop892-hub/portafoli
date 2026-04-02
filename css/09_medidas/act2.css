@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Estilo común */
+p {
+    background-color: lightblue;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+/* Efecto escalera (cada uno más ancho) */
+.p1 {
+    width: 20%;
+}
+
+.p2 {
+    width: 35%;
+}
+
+.p3 {
+    width: 50%;
+}
+
+.p4 {
+    width: 65%;
+}
+
+.p5 {
+    width: 80%;
+}

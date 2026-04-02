@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  background: #f3e3b3;
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.texto {
+  flex: 1;
+}
+
+.texto h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  color: #2b2b2b;
+  margin-bottom: 20px;
+}
+
+.texto p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.botones {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.principal {
+  background: #007c89;
+  color: white;
+}
+
+.secundario {
+  color: #007c89;
+}
+
+/* Imagen con estilo tipo "burbuja" */
+.imagen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.imagen img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 50%;
+  border: 10px solid #ffcc00;
+  box-shadow: 0 0 0 6px #ff6a00;
+}
+
+/* Franja inferior */
+.info {
+  background: #a8b8c8;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.info a {
+  color: #004a5a;
+  text-decoration: underline;
+}

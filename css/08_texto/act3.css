@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    background-color: #fdfaf6;
+    color: #333;
+}
+
+/* Contenedor */
+.container {
+    width: 60%;
+    margin: 50px auto;
+    background: #fffaf0;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Título */
+.titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 6px;
+    transition: all 0.3s ease;
+}
+
+/* 🔵 Efecto al pasar el cursor */
+.titulo:hover {
+    font-style: italic; /* cursiva */
+    color: blue;        /* color azul */
+}
+
+/* Autor */
+.autor {
+    font-size: 22px;
+    font-style: italic;
+    text-align: center;
+    word-spacing: 12px;
+}
+
+/* 🔴 Prólogo en rojo y negrita */
+.prologo {
+    font-size: 20px;
+    font-weight: bold; /* negrita */
+    color: red;        /* rojo */
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Texto */
+.texto {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+}
