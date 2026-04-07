@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+}
+
+/* Título principal */
+.titulo {
+    font-size: 40px;        /* tamaño */
+    font-weight: bold;      /* grosor */
+    text-align: center;
+}
+
+/* Autor */
+.autor {
+    font-size: 24px;
+    font-style: italic;     /* estilo */
+    text-align: center;
+}
+
+/* Prólogo */
+.prologo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Texto */
+.texto {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.6;
+    text-align: justify;
+}

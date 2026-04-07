@@ -1,0 +1,38 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Contenedor de cada tipo de arquitectura */
+.arquitectura {
+    background: white;
+    border: 2px solid #ccc;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Explicación con altura limitada y scroll */
+.explicacion {
+    height: 10rem;       /* altura máxima */
+    overflow-y: auto;    /* scroll vertical si excede altura */
+    border: 1px solid #ddd;
+    padding: 8px;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Cambio de borde al pasar el cursor */
+.explicacion:hover {
+    border-color: #999;
+}

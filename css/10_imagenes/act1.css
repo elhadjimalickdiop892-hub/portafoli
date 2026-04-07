@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    padding: 20px;
+}
+
+.chat {
+    max-width: 500px;
+    margin: auto;
+}
+
+.message {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.message.right {
+    flex-direction: row-reverse;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Avatar redondo */
+    margin: 0 10px;
+}
+
+.content {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 70%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.message.right .content {
+    background: #d1e7ff;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.date {
+    font-size: 11px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.text {
+    font-size: 15px;
+    color: #222;
+}

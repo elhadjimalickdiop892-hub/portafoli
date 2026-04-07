@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Sección principal ocupa toda la pantalla */
+.hero {
+    position: relative;
+    height: 100vh; /* 🔥 ocupa todo el viewport */
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Imagen de fondo */
+.hero img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 🔥 evita deformación */
+    top: 0;
+    left: 0;
+}
+
+/* Tarjeta de enlaces */
+.card {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Lista */
+.card ul {
+    list-style: none;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px 40px;
+    border-radius: 15px;
+}
+
+/* Elementos */
+.card li {
+    margin: 10px 0;
+}
+
+/* Enlaces */
+.card a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    color: #00d4ff;
+}

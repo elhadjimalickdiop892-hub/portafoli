@@ -1,0 +1,42 @@
+/* Estilo general */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor del loader */
+.loader-container {
+    text-align: center;
+}
+
+/* Loader animado */
+.loader {
+    width: 60px;
+    height: 60px;
+    border: 8px solid #ddd;
+    border-top-color: #4CAF50;
+    border-radius: 50%;
+    animation: girar 1.2s linear infinite;
+    margin: 0 auto 10px auto;
+}
+
+/* Animación de rotación */
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Texto */
+p {
+    font-size: 18px;
+    color: #555;
+}

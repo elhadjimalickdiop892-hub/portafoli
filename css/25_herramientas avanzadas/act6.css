@@ -1,0 +1,50 @@
+/* Estilo general */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Soporte del péndulo */
+.soporte {
+    position: relative;
+    width: 10px;
+    height: 300px;
+    background-color: #333;
+    margin-top: 50px;
+}
+
+/* Péndulo */
+.pendulo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 10px;
+    height: 200px;
+    background-color: #555;
+    transform-origin: top center; /* gira desde la parte superior */
+    animation: oscilar 2s ease-in-out infinite alternate; /* movimiento de ida y vuelta */
+}
+
+/* Bola del péndulo */
+.pendulo::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #ff6347;
+    border-radius: 50%;
+}
+
+/* Animación del péndulo */
+@keyframes oscilar {
+    0% { transform: rotate(-30deg); }
+    50% { transform: rotate(30deg); }
+    100% { transform: rotate(-30deg); }
+}
