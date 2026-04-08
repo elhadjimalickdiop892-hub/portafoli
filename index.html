@@ -14,44 +14,98 @@
 
 <body>
 
-    <!-- LOGO -->
+    <!-- HEADER -->
     <header>
         <a href="#" class="logo">Malick Diop</a>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#curriculum">Curriculum</a>
+        </nav>
     </header>
 
-    <!-- NAV -->
-    <nav>
-        <a href="#">Inicio</a>
-    
-        <a href="#">Sobre mí</a>
-        <a href="#">Contacto</a>
-        <a href="#">Curriculum</a>
-    </nav>
-
-    <!-- LINKS DE ACTIVIDADES -->
-    <div style="text-align:center; margin-top:10px;">
-        <a href="html/activitats.html">Activitats HTML</a><br>
-        <a href="css/activitatscss.html">Activitats CSS</a>
-    </div>
-
     <!-- HOME -->
-    <section class="home">
+    <section id="inicio" class="home">
         <figure>
             <img src="malick.jpg" alt="Foto de Malick">
-            
-            <h3 class="typing-text">
-                Apasionado por crear experiencias web únicas y funcionales.
-                Con habilidades en HTML, CSS y JavaScript, me esfuerzo por diseñar
-                sitios web atractivos y fáciles de usar.
-            </h3>
+            <figcaption>
+                <h3 class="typing-text">
+                    Apasionado por crear experiencias web únicas y funcionales.
+                    Con habilidades en HTML, CSS y JavaScript, me esfuerzo por diseñar
+                    sitios web atractivos y fáciles de usar.
+                </h3>
+            </figcaption>
         </figure>
 
-        <!-- REDES SOCIALES -->
+        <!-- Redes Sociales -->
         <div class="social">
-          
             <a href="https://www.instagram.com/Elmalick199/" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/in/malick-diop-8b1b4b1b6/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>
+            Soy Elhadji Malick Diop, un joven motivado con interés en informática, 
+            especialmente en desarrollo web y sistemas informáticos. Me gusta aprender
+            nuevas tecnologías y mejorar mis habilidades cada día.
+        </p>
+        <p>
+            Actualmente estudio Sistemas Microinformáticos y Redes, donde adquiero
+            conocimientos en hardware, software y redes. Me considero responsable,
+            trabajador y con buena capacidad para trabajar en equipo.
+        </p>
+        <p>
+            En mi tiempo libre me gusta explorar nuevas herramientas digitales y practicar 
+            con HTML, CSS y JavaScript para crear páginas web modernas y funcionales.
+        </p>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>📞 Teléfono: 643451953</p>
+        <p>📧 Email: <a href="mailto:elhadjimalickdiop8g2@gmail.com">elhadjimalickdiop8g2@gmail.com</a></p>
+
+        <!-- Redes Sociales -->
+        <div class="redes">
+            <a href="https://www.instagram.com/Elmalick199/" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a><br>
+            <a href="https://www.linkedin.com/in/malick-diop-8b1b4b1b6/" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+
+        <!-- Formulario -->
+        <form action="#" method="post" class="form-contacto">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- CURRICULUM -->
+    <section id="curriculum">
+        <h2>Curriculum</h2>
+        <a href="CV_Malick.pdf" target="_blank">Descargar Curriculum</a>
+    </section>
+
+    <!-- ACTIVIDADES -->
+    <section id="actividades">
+        <h2>Actividades</h2>
+        <a href="html/activitats.html">Activitats HTML</a><br>
+        <a href="css/activitatscss.html">Activitats CSS</a>
     </section>
 
     <!-- CONTENEDOR PRINCIPAL -->
@@ -59,11 +113,7 @@
 
         <!-- SIDEBAR -->
         <aside class="sidebar">
-            <h3>Contacto</h3>
-            <p>📞 643451953</p>
-            <p>📧 elhadjimalickdiop8g2@gmail.com</p>
-
-            <h3>Otros datos</h3>
+            <h3>Otros Datos</h3>
             <ul>
                 <li>2024–2025: PFI Electricidad</li>
                 <li>2025–2026: SMX</li>
@@ -80,10 +130,8 @@
 
         <!-- CONTENIDO PRINCIPAL -->
         <main class="contenido">
-
             <h1>ELHADJI MALICK <span>DIOP</span></h1>
 
-            <!-- PERFIL PERSONAL -->
             <section>
                 <h2>Perfil Personal</h2>
                 <p>
@@ -92,25 +140,20 @@
                 </p>
             </section>
 
-            <!-- FORMACIÓN ACADÉMICA -->
             <section>
                 <h2>Formación Académica</h2>
-
                 <div class="bloque">
                     <strong>2025 - 2026</strong>
                     <p>Sistemas Microinformáticos y Redes</p>
                 </div>
-
                 <div class="bloque">
                     <strong>2023 - 2024</strong>
                     <p>PFI Electricidad, Agua y Gas</p>
                 </div>
             </section>
 
-            <!-- EXPERIENCIA LABORAL -->
             <section>
                 <h2>Experiencia Laboral</h2>
-
                 <div class="bloque">
                     <strong>Operario Agrario</strong>
                     <span>Junio 2023 - Septiembre 2023</span>
@@ -119,7 +162,6 @@
                         <li>Recolección en campo</li>
                     </ul>
                 </div>
-
                 <div class="bloque">
                     <strong>Ayudante Electricista</strong>
                     <span>Prácticas</span>
@@ -130,7 +172,6 @@
                 </div>
             </section>
 
-            <!-- IDIOMAS -->
             <section>
                 <h2>Idiomas</h2>
                 <ul>
