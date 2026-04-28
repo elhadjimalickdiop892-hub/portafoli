@@ -3,13 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Portafolio - Malick Diop</title>
 
-  <!-- CSS -->
   <link rel="stylesheet" href="index.css">
-
-  <!-- Iconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -17,7 +13,7 @@
 
   <!-- HEADER -->
   <header>
-    <a href="#" class="logo">Malick Diop</a>
+    <a href="#inicio" class="logo">Malick Diop</a>
 
     <nav>
       <ul>
@@ -32,20 +28,18 @@
 
   <!-- INICIO -->
   <section id="inicio" class="home">
-    <figure>
-      <img src="malick.jpg" alt="Foto de Malick">
-      <figcaption>
-        <h3>
-          Apasionado por crear experiencias web únicas y funcionales.
-          Me gusta diseñar páginas modernas con HTML y CSS.
-        </h3>
-      </figcaption>
-    </figure>
+    <img src="malick.jpg" alt="Foto de perfil de Malick Diop">
+
+    <h3>
+      Apasionado por crear experiencias web únicas y funcionales.
+      Me gusta diseñar páginas modernas con HTML y CSS.
+    </h3>
 
     <div class="social">
       <a href="https://www.instagram.com/Elmalick199/" target="_blank">
         <i class="fab fa-instagram"></i>
       </a>
+
       <a href="https://www.linkedin.com/in/malick-diop-8b1b4b1b6/" target="_blank">
         <i class="fab fa-linkedin"></i>
       </a>
@@ -64,7 +58,8 @@
   <!-- CURRICULUM -->
   <section id="curriculum">
     <h2>Curriculum</h2>
-    <a href="CV_Malick.pdf" target="_blank">📄 Descargar Curriculum</a>
+
+    <a href="malick_curriculum.pdf" target="_blank">📄 Descargar CV</a>
   </section>
 
   <!-- CONTACTO -->
@@ -72,23 +67,23 @@
     <h2>Contacto</h2>
 
     <p>📞 643 451 953</p>
-    <p>📧 <a href="mailto:elhadjimalickdiop8g2@gmail.com">Email</a></p>
+    <p>📧 <a href="mailto:elhadjimalickdiop8g2@gmail.com">Enviar email</a></p>
 
     <form action="#" method="post">
-      <label>Nombre:</label>
-      <input type="text" required>
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required>
 
-      <label>Email:</label>
-      <input type="email" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
 
-      <label>Mensaje:</label>
-      <textarea rows="5" required></textarea>
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
       <button type="submit">Enviar</button>
     </form>
   </section>
 
-  <!-- ACTIVIDADES (OBLIGATORIO PORTFOLIO) -->
+  <!-- ACTIVIDADES -->
   <section id="actividades">
     <h2>Actividades</h2>
 
@@ -98,7 +93,7 @@
     </ul>
   </section>
 
-  <!-- CONTENIDO EXTRA / CV -->
+  <!-- CV EXTRA -->
   <div class="container">
 
     <aside class="sidebar">
@@ -117,48 +112,32 @@
     </aside>
 
     <main class="contenido">
-      <h1>ELHADJI MALICK DIOP</h1>
+      <h2>Perfil</h2>
+      <p>Estudiante de informática con interés en redes y desarrollo web.</p>
 
-      <section>
-        <h2>Perfil</h2>
-        <p>Estudiante de informática con interés en redes y desarrollo web.</p>
-      </section>
+      <h2>Experiencia</h2>
+      <ul>
+        <li>Operario agrario (2023)</li>
+        <li>Ayudante electricista (prácticas)</li>
+      </ul>
 
-      <section>
-        <h2>Formación</h2>
-
-        <p><strong>2025–2026:</strong> SMX</p>
-        <p><strong>2023–2024:</strong> PFI Electricidad</p>
-      </section>
-
-      <section>
-        <h2>Experiencia</h2>
-
-        <ul>
-          <li>Operario agrario (2023)</li>
-          <li>Ayudante electricista (prácticas)</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Idiomas</h2>
-        <ul>
-          <li>Español</li>
-          <li>Francés</li>
-          <li>Catalán</li>
-        </ul>
-      </section>
+      <h2>Idiomas</h2>
+      <ul>
+        <li>Español</li>
+        <li>Francés</li>
+        <li>Catalán</li>
+      </ul>
     </main>
 
   </div>
 
-  <!-- FOOTER (OBLIGATORIO) -->
+  <!-- FOOTER -->
   <footer>
     <p>© 2026 Malick Diop</p>
 
     <div>
-      <a href="https://instagram.com">Instagram</a>
-      <a href="https://linkedin.com">LinkedIn</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
     </div>
   </footer>
 
