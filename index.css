@@ -1,235 +1,212 @@
-/* =========================
-   RESET Y ESTILOS GENERALES
-========================= */
+/* =====================
+   RESET
+===================== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* =====================
+   BODY
+===================== */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+  background: #0f172a;
+  color: #e2e8f0;
+  line-height: 1.6;
 }
 
-a {
-    text-decoration: none;
-    color: #0077b6;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: #023e8a;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #03045e;
-}
-
-p {
-    margin: 10px 0;
-}
-
-/* =========================
-   HEADER Y NAV
-========================= */
+/* =====================
+   HEADER
+===================== */
 header {
-    background-color: #0077b6;
-    color: white;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background: #111827;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #22c55e;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-header .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
+.logo {
+  color: #22c55e;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-header nav a {
-    margin-left: 20px;
-    color: white;
-    font-weight: 500;
+/* NAV */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
 }
 
-header nav a:hover {
-    color: #90e0ef;
+nav ul li a {
+  color: #e2e8f0;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
-/* =========================
-   HOME
-========================= */
+nav ul li a:hover {
+  background: #22c55e;
+  color: #0f172a;
+}
+
+/* =====================
+   SECCIONES
+===================== */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: #22c55e;
+  margin-bottom: 15px;
+}
+
+/* =====================
+   INICIO
+===================== */
 .home {
-    text-align: center;
-    padding: 50px 20px;
-    background: linear-gradient(to right, #caf0f8, #ade8f4);
+  text-align: center;
 }
 
 .home img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #0077b6;
-    margin-bottom: 20px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid #22c55e;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
 
-.home .typing-text {
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto;
-    color: #03045e;
+.social {
+  margin-top: 20px;
 }
 
 .social a {
-    margin: 0 10px;
-    font-size: 1.5rem;
-    color: #0077b6;
+  color: #e2e8f0;
+  font-size: 25px;
+  margin: 0 10px;
+  transition: 0.3s;
 }
 
 .social a:hover {
-    color: #023e8a;
+  color: #22c55e;
+  transform: scale(1.2);
 }
 
-/* =========================
-   SECCIONES
-========================= */
-section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: white;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+/* =====================
+   CURRICULUM LINK
+===================== */
+#curriculum a {
+  display: inline-block;
+  background: #22c55e;
+  color: #0f172a;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-section h2 {
-    margin-bottom: 20px;
-    border-bottom: 2px solid #0077b6;
-    display: inline-block;
-    padding-bottom: 5px;
+#curriculum a:hover {
+  background: #16a34a;
 }
 
-/* =========================
-   SIDEBAR Y CONTENIDO
-========================= */
+/* =====================
+   FORMULARIO
+===================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background: #22c55e;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #16a34a;
+}
+
+/* =====================
+   ACTIVIDADES
+===================== */
+#actividades ul {
+  list-style: none;
+}
+
+#actividades a {
+  color: #22c55e;
+  text-decoration: none;
+}
+
+/* =====================
+   CV LATERAL
+===================== */
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+  display: flex;
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .sidebar {
-    flex: 1;
-    min-width: 250px;
-    background-color: #caf0f8;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.sidebar h3 {
-    margin-bottom: 15px;
-    color: #023e8a;
-}
-
-.sidebar ul {
-    list-style: disc;
-    margin-left: 20px;
+  flex: 1;
+  background: #111827;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .contenido {
-    flex: 3;
-    min-width: 300px;
+  flex: 2;
+  background: #1f2937;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.bloque {
-    margin-bottom: 20px;
+/* =====================
+   FOOTER
+===================== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111827;
+  border-top: 2px solid #22c55e;
 }
 
-.bloque strong {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
+footer a {
+  color: #22c55e;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
-.bloque span {
-    font-size: 0.9rem;
-    color: #555;
-}
-
-/* =========================
-   FORMULARIO
-========================= */
-.form-contacto {
-    margin-top: 20px;
-}
-
-.form-contacto input,
-.form-contacto textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.form-contacto button {
-    padding: 10px 20px;
-    background-color: #0077b6;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.form-contacto button:hover {
-    background-color: #023e8a;
-}
-
-/* =========================
-   LINKS ACTIVIDADES
-========================= */
-#actividades a {
-    display: inline-block;
-    margin: 10px 0;
-    color: #0077b6;
-    font-weight: 500;
-}
-
-#actividades a:hover {
-    color: #023e8a;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 900px) {
-    .container {
-        flex-direction: column;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    header nav {
-        margin-top: 10px;
-    }
-}
-
-@media (max-width: 500px) {
-    .home .typing-text {
-        font-size: 1rem;
-    }
-
-    header .logo {
-        font-size: 1.5rem;
-    }
+footer a:hover {
+  text-decoration: underline;
 }

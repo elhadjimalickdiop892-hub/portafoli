@@ -1,60 +1,51 @@
-/* Estilo general */
-body, html {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #001d3d; /* cielo oscuro */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: skyblue;
+  overflow: hidden;
 }
 
-/* Contenedor del cielo */
-.cielo {
-    position: relative;
-    width: 400px;
-    height: 400px;
-}
-
-/* Sol */
+/* ☀️ SOL */
 .sol {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 150px;
-    height: 150px;
-    background-color: gold;
-    border-radius: 50%;
-    box-shadow: 0 0 50px rgba(255, 215, 0, 0.7);
-    z-index: 1;
+  width: 150px;
+  height: 150px;
+  background: yellow;
+  border-radius: 50%;
+  position: absolute;
 }
 
-/* Luna */
+/* 🌑 LUNA */
 .luna {
-    position: absolute;
-    top: 50%;
-    left: -100px; /* comienza fuera del Sol */
-    transform: translate(0, -50%);
-    width: 120px;
-    height: 120px;
-    background-color: #ccc;
-    border-radius: 50%;
-    z-index: 2;
-    animation: eclipse 5s infinite; /* animación del eclipse */
+  width: 150px;
+  height: 150px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  animation: eclipse 6s infinite linear;
 }
 
-/* Animación para el eclipse */
+/* 🌘 ANIMACIÓN ECLIPSE */
 @keyframes eclipse {
-    0% {
-        left: -120px; /* fuera del Sol a la izquierda */
-    }
-    40% {
-        left: 140px; /* sobre el Sol */
-    }
-    60% {
-        left: 140px; /* permanece tapando el Sol unos instantes */
-    }
-    100% {
-        left: 400px; /* sale a la derecha */
-    }
+  0% {
+    transform: translateX(-400px);
+  }
+
+  40% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(0px);
+  }
+
+  60% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(400px);
+  }
 }

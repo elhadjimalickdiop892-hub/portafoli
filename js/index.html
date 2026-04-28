@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="ca">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mòdul Optatiu: Introducció a JS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="main.css">  
+    <meta charset="UTF-8">
+    <title>Exercici 1</title>
 </head>
 <body>
-    <div>
-        <h1>Sentències de control de flux</h1>        
-    </div>
-	<h3> Premeu F12 per obrir les Dev-Tools i mireu que passa en "Console"  </h3>
-    <script src="funcions.js"></script>  
+
+    <h2>Mostra una paraula 10 vegades</h2>
+
+    <input type="text" id="paraula" placeholder="Escriu una paraula">
+    <button onclick="mostrarParaula()">Mostrar</button>
+
+    <p id="resultat"></p>
+
+    <script>
+        function mostrarParaula() {
+            let paraula = document.getElementById("paraula").value;
+            let resultat = "";
+
+            for (let i = 0; i < 10; i++) {
+                resultat += paraula + "<br>";
+            }
+
+            document.getElementById("resultat").innerHTML = resultat;
+        }
+    </script>
+
 </body>
 </html>

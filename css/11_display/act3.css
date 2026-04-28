@@ -1,21 +1,26 @@
-.menu {
-  list-style: none;      /* Quita los puntos de la lista */
-  padding: 0;
-  margin: 0;
-  display: flex;         /* Alinea los <li> horizontalmente */
-  gap: 20px;             /* Espacio entre botones */
+/* Quitar estilos por defecto de la lista */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.menu li a {
-  text-decoration: none; /* Quita el subrayado */
-  padding: 10px 15px;
-  background: #0077cc;
-  color: white;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background 0.3s;
+/* Hacer que los elementos estén en línea */
+ul li {
+    display: inline-block;
+    margin-right: 15px;
 }
 
-.menu li a:hover {
-  background: #005fa3;
+/* Estilo de los enlaces */
+ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Efecto hover */
+ul li a:hover {
+    background-color: #2980b9;
 }
